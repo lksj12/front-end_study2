@@ -1,0 +1,327 @@
+/* CSS Initialize */
+body, p, ul, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Layouts */
+.l_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.l_sidebar {
+    float: right;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.l_main {
+    overflow: hidden;
+}
+
+/* Commons */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    display: inline-block;
+}
+
+.button_block {
+    display: block;
+    text-align: center;
+}
+
+.button_important {
+    background-color: orangered;
+}
+
+/* Typography */
+html {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* Utility */
+.mb_5{ margin-bottom: 5px;}
+.mb_10{ margin-bottom: 10px;}
+.mb_15{ margin-bottom: 15px;}
+.mb_20{ margin-bottom: 20px;}
+.mb_25{ margin-bottom: 25px;}
+
+.pt_5{ padding-top: 5px;}
+.pt_10{ padding-top: 10px;}
+.pt_15{ padding-top: 15px;}
+.pt_20{ padding-top: 20px;}
+.pt_25{ padding-top: 25px;}
+
+/* Components */
+body {
+    background-image: url(images/bg.png);
+    color: #999;
+}
+
+.contents {
+    padding: 40px 0;
+}
+
+.checkout {
+    background-color: #222;
+}
+
+.checkout-section {
+    margin: 20px;
+}
+
+.video {
+    background-color: dodgerblue;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.video-iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.price {
+    font-size: 40px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.price-origin {
+    font-size: 0.5em;
+    font-weight: normal;
+    color: #777;
+    position: relative;
+}
+
+.price-origin:before {
+    content: "";
+    position: absolute;
+    left:0;
+    right:0;
+    height: 2px;
+    bottom: 0.6em;
+    opacity: 0.5;
+    background-color:white;
+}
+
+.description {
+    color: white;
+}
+
+.list {
+    padding-left: 1em;
+}
+
+.list li:before {
+    content: "";
+    background-color: gray;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.4em;
+    margin-left: -1em;
+}
+
+.course-cover {
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/cover.png);
+    padding: 30px;
+    position: relative;
+}
+
+.course-cover:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+}
+
+.course-creator, .course-title{
+    position: relative;
+    z-index: 10;
+}
+
+.course-creator {
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.course-creator-logo {
+    width:50px;
+    border-radius: 50%;
+}
+
+.course-creator-contents strong {
+    display: block;
+}
+
+.course-title {
+    overflow: hidden;
+}
+
+.course-title h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.course-title p {
+    margin-bottom: 20px;
+}
+
+.star {
+    width: 150px;
+    height: 30px;
+    background-image: url(images/star-sprite.png);
+    display: inline-block;
+    overflow: hidden;
+}
+
+.star:before {
+    content: "";
+    width: 0;
+    height: 30px;
+    background-image: url(images/star-sprite.png);
+    background-position: left bottom;
+    display: block;
+}
+
+.star.s01:before {width:20%}
+.star.s02:before {width:40%}
+.star.s03:before {width:60%}
+.star.s04:before {width:80%}
+
+
+.course-section {
+    margin: 20px 0;
+}
+
+.course-section h2 {
+    font-size: 30px;
+    color: #999;
+    border-bottom: 2px solid;
+    margin-bottom:20px;
+}
+
+/* .course-section-contents {
+
+}
+*/
+/*
+.curriculum {
+
+} 
+*/
+.curriculum-item {
+    background-color: #111;
+    margin-bottom: 10px;
+}
+
+.curriculum-item:last-child {
+    margin-bottom: 0
+}
+
+.curriculum-item h3 {
+    margin: 10px 20px;
+}
+
+.curriculum-item-list {
+    background-color: #0e0e0e;
+    padding:20px 0;
+    margin:5px;
+}
+
+.curriculum-link {
+    background-color: rgba(255,255,255,0.01);
+    display:block;
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+.curriculum-link:hover {
+    color:white;
+}
+
+.curriculum-link:before {
+    content: "";
+    width: 0;
+    height:0;
+    border-width:5px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent currentColor;
+    display: inline-block;
+    transform: translateY(-2px);
+
+}
+
+.runningtime {
+    float: right;
+    font-size: 10px;
+}
+
+.footer {
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (max-width: 1028px) {
+    .l_sidebar {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 709px) {
+    .course-cover{
+        text-align: center;
+    }
+    .course-creator {
+        float: none;
+        width: auto;
+        margin: 0;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 590px) {
+    .runningtime{
+        display: none;
+    }
+}
